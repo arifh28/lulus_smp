@@ -11,3 +11,5 @@ Screenshoot Handphone
 Screenshoot Komputer
 
 Url admin di base_url/index.php/operator dengan username admin dan password admin
+
+![](screenshoot/ss_operator.png)
