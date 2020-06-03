@@ -203,30 +203,7 @@ class Siswa extends CI_Controller {
 					 </tr>
 				</table>
 
-				 <table cellpadding="2" cellspacing="2">
-					
-					<tr>
-					  <td width="30" align="center"></td>
-					  <td width="450" align="center">					
-					  </td>		  
-					</tr>
-					
-					<tr>
-					  <td width="30"></td>
-					  <td width="450">
-						<p style="font-size: 10pt;">Untuk SKL dengan ada nilainya akan diberikan dalam bentuk Hardcopy (kertas) setelah membayar biaya pendidikan ke sekolah dengan ketentuan :<br>
-						1. Kelas IXA, IXB, dan IXC pada hari Senin, 8 Juni 2020 dimulai dari pukul 08.00 - 11.00<br>
-						2. Kelas IXD, IXE pada hari Selasa, 8 Juni 2020 dimulai dari pukul 08.00 - 11.00</p>					
-					  </td>		  
-					</tr>
-					<tr>
-					  <td width="30"></td>
-					  <td width="450">
-						<p style="font-size: 10pt;">Untuk nilai berbentuk PDF akan bisa di download pada Rabu, 9 Juni 2020 pagi dengan login ke alamat '.base_url().' dan pilih download SKL NILAI bagi yang sudah mengambil SKL kertas.</p>					
-					  </td>		  
-					</tr>
-					
-				 </table>
+				 
 				<table cellpadding="1" cellspacing="1">
 					 <tr>
 					  <td width="30"></td>
