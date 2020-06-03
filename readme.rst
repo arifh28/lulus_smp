@@ -2,3 +2,12 @@ KELULUSAN SMP ONLINE MENGGUNAKAN CODEIGNITER 3
 
 Silahkan install download pengumuman kelulusan online.
 
+![](screenshoot/ss_lulus_hp.png)
+
+Screenshoot Handphone
+
+![](screenshoot/ss_lulus_komputer.png)
+
+Screenshoot Komputer
+
+Url admin di base_url/index.php/operator dengan username admin dan password admin
