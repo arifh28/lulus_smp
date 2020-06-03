@@ -1,7 +1,5 @@
 KELULUSAN SMP ONLINE MENGGUNAKAN CODEIGNITER 3
 
-Silahkan install download pengumuman kelulusan online.
-
 ![](screenshoot/ss_lulus_hp.png)
 
 Screenshoot Handphone
