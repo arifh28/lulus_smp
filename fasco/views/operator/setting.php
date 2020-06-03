@@ -100,71 +100,7 @@
 									</form>	
                                     </div>
                                 </div>
-                            </div>
-							<div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <strong>Setting</strong>
-                                        <small> Gambar-gambar</small>
-                                    </div>
-                                    <div class="card-body card-block">
-										<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/operator/proses_setting_logo_sekolah">	
-										<div class="row form-group">
-											<div class="col-md-2">
-												<label for="file-input_logo" class=" form-control-label">Logo Sekolah</label>
-											</div>
-											<div class="col-md-4">
-												<input type="file" id="file-input_logo" name="file-input_logo" class="form-control-file">
-											</div>
-											<div class="col-md-4">
-												<p><small>Upload dengan format gif/jpg/png/jpeg dengan resolusi gambar 3000 x 2000 pixel dan maksimal 2 MB. Direkomendasikan PNG transparent.</small></p>
-											</div>
-											<div class="col-md-2">
-												<img src="<?php echo base_url(); ?>assets/back/images/<?php echo $logo_sekolah; ?>" width="200px">
-											</div>
-										</div>	
-										<button type="submit" class="btn btn-sm btn-success">GANTI LOGO SEKOLAH</button>
-										</form>
-										<hr>
-										<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/operator/proses_setting_ttd_ks">	
-										<div class="row form-group">
-											<div class="col-md-2">
-												<label for="file-input_ttd" class=" form-control-label">Tanda Tangan Kepala Sekolah</label>
-											</div>
-											<div class="col-md-4">
-												<input type="file" id="file-input_ttd" name="file-input_ttd" class="form-control-file">
-											</div>
-											<div class="col-md-4">
-												<p><small>Upload dengan format gif/jpg/png/jpeg dengan resolusi gambar 3000 x 2000 pixel dan maksimal 2 MB. Direkomendasikan PNG transparent.</small></p>
-											</div>
-											<div class="col-md-2">
-												<img src="<?php echo base_url(); ?>assets/back/images/<?php echo $tanda_tangan_ks; ?>" width="200px">
-											</div>
-										</div>	
-										<button type="submit" class="btn btn-sm btn-success">GANTI TANDA TANGAN</button>
-										</form>
-										<hr>
-										<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/operator/proses_setting_stempel">	
-										<div class="row form-group">
-											<div class="col-md-2">
-												<label for="file-input_stempel" class=" form-control-label">Stempel Sekolah</label>
-											</div>
-											<div class="col-md-4">
-												<input type="file" id="file-input_stempel" name="file-input_stempel" class="form-control-file">
-											</div>
-											<div class="col-md-4">
-												<p><small>Upload dengan format gif/jpg/png/jpeg dengan resolusi gambar 3000 x 2000 pixel dan maksimal 2 MB. Direkomendasikan PNG transparent.</small></p>
-											</div>
-											<div class="col-md-2">
-												<img src="<?php echo base_url(); ?>assets/back/images/<?php echo $stempel_sekolah; ?>" width="200px">
-											</div>
-										</div>	
-										<button type="submit" class="btn btn-sm btn-success">GANTI STEMPEL</button>
-										</form>
-										
-									</div>
-								</div>
-							</div>								
+                            </div>											
 						</div>
                     </div>
 				</div>
