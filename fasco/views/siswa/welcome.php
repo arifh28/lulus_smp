@@ -27,13 +27,13 @@ Guru <?php echo $nama_sekolah; ?> pada hari <?php echo $tanggal_rapat; ?>.</p>
 bersangkutan. Harap menjadikan maklum bagi yang berkepentingan.</p>
 
 
-<p>Cimanggu, 5 Juni 2020<br>
+<p><?php echo $pengesahan; ?><br>
 Kepala Sekolah,<br>
 <br>
 Ttd<br>
 <br>
 <?php echo $nama_kepala_sekolah; ?><br>
-NIP. -</p>
+NIP. <?php echo $nbm_kepala_sekolah; ?></p>
 
 
 					<a href="<?php echo base_url(); ?>index.php/siswa/cetak_biasa/<?php echo $this->session->userdata('nisn'); ?>" class="btn btn-sm btn-info"><i class="fas fa-download"></i> Download</a>
