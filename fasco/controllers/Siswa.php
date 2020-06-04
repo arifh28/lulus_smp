@@ -19,6 +19,7 @@ class Siswa extends CI_Controller {
 			$data['nama_kepala_sekolah'] = $setting->nama_kepala_sekolah;
 			$data['tanggal_rapat'] = $setting->tanggal_rapat;
 			$data['nbm_kepala_sekolah'] = $setting->nbm_kepala_sekolah;
+			$data['pengesahan'] = $setting->pengesahan;
 			$this->load->view('siswa/template/header', $data); // Load view login.php
 			$this->load->view('siswa/welcome'); // Load view login.php
 			$this->load->view('siswa/template/footer');
@@ -35,6 +36,7 @@ class Siswa extends CI_Controller {
 			$data['nama_sekolah'] = $setting->nama_sekolah;
 			$data['nama_kepala_sekolah'] = $setting->nama_kepala_sekolah;
 			$data['tanggal_rapat'] = $setting->tanggal_rapat;
+			$data['pengesahan'] = $setting->pengesahan;
 			$data['nbm_kepala_sekolah'] = $setting->nbm_kepala_sekolah;
 			$this->load->view('siswa/template/header', $data); // Load view login.php
 			$this->load->view('siswa/lihat'); // Load view login.php
