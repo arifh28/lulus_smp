@@ -103,7 +103,9 @@ class OperatorModel extends CI_Model {
 	
 	// MASUK APP ------------ MASUK APP //	
 	public function get_masuk_app(){        
-        $result = $this->db->get('login_app'); // Untuk mengeksekusi dan mengambil data hasil query
+        
+		//$result = $this->db->get('login_app'); // Untuk mengeksekusi dan mengambil data hasil query
+		$result = $this->db->query("SELECT a.ip, a.tanggal, a.id_siswa, a.agent, b.nama, b.kelas FROM login_app a LEFT JOIN siswa b ON a.id_siswa=b.id_siswa ORDER BY a.tanggal");
         return $result;
     }
 	

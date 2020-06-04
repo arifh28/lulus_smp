@@ -31,6 +31,7 @@
     <link href="<?php echo base_url(); ?>assets/back/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
     <link href="<?php echo base_url(); ?>assets/back/vendor/vector-map/jqvmap.min.css" rel="stylesheet" media="all">
     <script src="<?php echo base_url(); ?>assets/back/vendor/ckeditor/ckeditor.js"></script>
+	<link href="<?php echo base_url(); ?>assets/back/vendor/datatables/datatables.min.css" rel="stylesheet" media="all">    
 	
 	<!-- Main CSS-->
     <link href="<?php echo base_url(); ?>assets/back/css/theme.css" rel="stylesheet" media="all">
@@ -89,6 +90,11 @@
 									<i class="fas fa-print"></i>Cetak Kartu Login</a>
                         </li>
 						
+						<li>
+                            <a href="<?php echo base_url(); ?>index.php/operator/masuk_web">
+									<i class="fas fa-eye"></i>Pengunjung dan Login</a>
+                        </li>
+						
                     </ul>
                 </nav>
             </div>
@@ -131,7 +137,7 @@
                                                 <i class="zmdi zmdi-account"></i>Account</a>
                                         </div>
                                         <div class="account-dropdown__item">
-                                            <a href="#">
+                                            <a href="<?php echo base_url(); ?>index.php/operator/setting">
                                                 <i class="zmdi zmdi-settings"></i>Setting</a>
                                         </div>
                                     </div>                                    

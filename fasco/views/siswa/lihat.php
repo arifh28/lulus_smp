@@ -16,7 +16,7 @@ Sekolah asal 	: <?php echo $nama_sekolah; ?>	 </p>
 <br>
 <br>
 <p>Yang bersangkutan dinyatakan LULUS berdasarkan hasil Keputusan Rapat Pleno Kelulusan Dewan
-Guru <?php echo $nama_sekolah; ?> pada hari <?php echo $tanggal_rapat; ?>.</p>
+Guru <?php echo $nama_sekolah; ?> pada hari <?php echo $tanggal_rapat; ?></p>
 <p>Surat Keterangan Lulus ini berlaku sementara sampai dengan diterbitkannya Ijazah kepada yang
 bersangkutan. Harap menjadikan maklum bagi yang berkepentingan.</p>
 

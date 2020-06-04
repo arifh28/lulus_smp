@@ -27,6 +27,24 @@ class Operator extends CI_Controller {
 		};	
 	}
 	
+	public function masuk_web(){
+		if ($this->session->userdata('tipe')== 'operator') {
+			$data['jml_siswa'] = $this->OperatorModel->get_siswa()->num_rows();
+			$data['jml_nilai_siswa'] = $this->OperatorModel->get_nilai_siswa()->num_rows();
+			$setting = $this->OperatorModel->get_setting()->row();
+			$data['nama_sekolah'] = $setting->nama_sekolah;
+			$data['logo_sekolah'] = $setting->logo_sekolah;
+			$data['login_app'] = $this->OperatorModel->get_masuk_app()->result();	
+			$data['kunjung_web'] = $this->OperatorModel->get_pengunjung()->result();
+			$data['title'] = "Data Pengunjung dan Login App";
+			$this->load->view('operator/template/header', $data); // Load view login.php
+			$this->load->view('operator/masuk'); // Load view login.php
+			$this->load->view('operator/template/footer', $data); // Load view login.php
+		} else {
+			redirect('auth/operator');
+		};	
+	}
+	
 	public function siswa(){
 		if ($this->session->userdata('tipe')== 'operator') {
 			$data['jml_siswa'] = $this->OperatorModel->get_siswa()->num_rows();

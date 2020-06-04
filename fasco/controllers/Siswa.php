@@ -36,8 +36,6 @@ class Siswa extends CI_Controller {
 			$data['nama_sekolah'] = $setting->nama_sekolah;
 			$data['nama_kepala_sekolah'] = $setting->nama_kepala_sekolah;
 			$data['tanggal_rapat'] = $setting->tanggal_rapat;
-			$data['pengesahan'] = $setting->pengesahan;
-			$data['nbm_kepala_sekolah'] = $setting->nbm_kepala_sekolah;
 			$this->load->view('siswa/template/header', $data); // Load view login.php
 			$this->load->view('siswa/lihat'); // Load view login.php
 			$this->load->view('siswa/template/footer');
@@ -81,7 +79,7 @@ class Siswa extends CI_Controller {
 				<table cellpadding="2" cellspacing="2">
 					
 					<tr>
-					  <td width="520" align="center">'.$kop.'</td>
+					  <td width="520">'.$kop.'</td>
 					 </tr>
 					 <hr>
 					<tr>
@@ -95,8 +93,7 @@ class Siswa extends CI_Controller {
 					 </tr>
 					 
 					<tr>
-					  <td width="20" align="center"></td>
-					  
+					  <td width="20" align="center"></td>					  
 					  <td width="480" align="center">
 						<p style="font-size: 14pt; text-decoration: underline; font-weight: bolder; ">SURAT KETERANGAN LULUS</p>  
 					  </td>
@@ -207,7 +204,23 @@ class Siswa extends CI_Controller {
 					 </tr>
 				</table>
 
-				 
+				 <table cellpadding="2" cellspacing="2">
+					<tr>
+					  <td width="30"></td>
+					  <td width="450">
+						<p style="font-size: 10pt;">Untuk SKL dengan ada nilainya akan diberikan dalam bentuk Hardcopy (kertas) setelah membayar biaya pendidikan ke sekolah dengan ketentuan :<br>
+						1. Kelas IXA, IXB, dan IXC pada hari Senin, 8 Juni 2020 dimulai dari pukul 08.00 - 11.00<br>
+						2. Kelas IXD, IXE pada hari Selasa, 9 Juni 2020 dimulai dari pukul 08.00 - 11.00</p>					
+					  </td>		  
+					</tr>
+					<tr>
+					  <td width="30"></td>
+					  <td width="450">
+						<p style="font-size: 10pt;">Untuk nilai berbentuk PDF akan bisa di download pada Rabu, 9 Juni 2020 pagi dengan login ke alamat '.base_url().' dan pilih download SKL NILAI bagi yang sudah mengambil SKL kertas.</p>					
+					  </td>		  
+					</tr>
+					
+				 </table>
 				<table cellpadding="1" cellspacing="1">
 					 <tr>
 					  <td width="30"></td>
@@ -296,6 +309,16 @@ class Siswa extends CI_Controller {
 						<p style="font-size: 10pt; font-weight: bold;">NIP. '.$nbm_kepala_sekolah.'</p>
 					  </td>					  
 					 </tr>
+					 <tr>
+					  <td width="30"></td>
+					  <td width="450">											
+					  </td>		  
+					</tr>					
+					<tr>
+					  <td width="480">PDF ini dicetak pada '.date ('d M Y, h:i:s').'</td>
+					  <td width="40">											
+					  </td>		  
+					</tr>
 					 
 					 
 				 </table>

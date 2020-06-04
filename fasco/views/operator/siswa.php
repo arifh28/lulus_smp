@@ -64,15 +64,7 @@
                                         <a href="<?php echo base_url(); ?>index.php/operator/tambah_siswa">
 											<button class="au-btn au-btn-icon au-btn--green au-btn--small">
                                             <i class="zmdi zmdi-plus"></i>tambah siswa</button>
-										</a>
-                                        <div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
-                                            <select class="js-select2" name="type">
-                                                <option selected="selected">Export</option>
-                                                <option value="">Excel</option>
-                                                <option value="">PDF</option>
-                                            </select>
-                                            <div class="dropDownSelect2"></div>
-                                        </div>
+										</a>                                        
                                     </div>
                                 </div>
                                 <div class="table-responsive table-responsive-data2">

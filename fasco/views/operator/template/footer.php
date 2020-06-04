@@ -41,12 +41,12 @@
 
 			$('#datepairExample').datepair();
 		</script>
-			
+		<script src="<?php echo base_url(); ?>assets/back/vendor/datatables/datatables.min.js"></script>	
 	<?php  } else { ?>
 		<!-- Jquery JS-->
 		<script src="<?php echo base_url(); ?>assets/back/vendor/jquery-3.2.1.min.js"></script>
 		<!-- jQuery CDN - Slim version (=without AJAX) -->
-		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+		<script src="<?php echo base_url(); ?>assets/back/vendor/datatables/datatables.min.js"></script>
 	<?php } ; ?>
 	
     <!-- Bootstrap JS-->
@@ -74,7 +74,12 @@
 
     <!-- Main JS-->
     <script src="<?php echo base_url(); ?>assets/back/js/main.js"></script>
-		
+	<script>
+		$(document).ready( function () {
+			$('#tables').DataTable();
+		} );
+	</script>
+					
 </body>
 
 </html>

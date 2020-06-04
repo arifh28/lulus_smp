@@ -12,7 +12,7 @@
 
 				<?php } elseif ( $waktu_pengumuman <= date('M d Y, h:i:s') ) { ?>
 
-					<p>Yang bertanda tangan di bawah ini, Kepala Sekolah Menengah Pertama Muhammadiyah Cimanggu menerangkan bahwa :</p>
+					<p>Yang bertanda tangan di bawah ini, Kepala <?php echo $nama_sekolah; ?> menerangkan bahwa :</p>
 <p>Nama 	: <?php echo $this->session->userdata('nama'); ?><br>
 Tempat dan Tanggal lahir 	: <?php echo $this->session->userdata('ttl'); ?><br>
 Nama Orang tua 	: <?php echo $this->session->userdata('orang_tua'); ?><br>	
